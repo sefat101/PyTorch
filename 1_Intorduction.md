@@ -74,7 +74,7 @@
 * Improved overall speed and scalability for complex, real-world applications.
 * Provided better compatibility across a wider variety of deployment environments.
 
-###PyTorch  vs  TensorFlow
+### PyTorch  vs  TensorFlow
 
 | Aspect | PyTorch | TensorFlow | Verdict |
 | --- | --- | --- | --- |
