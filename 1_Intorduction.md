@@ -1,5 +1,3 @@
-Here is an improved, digitized, and consolidated version of the notes from the provided images, integrating both the slide text and the handwritten annotations for better clarity.
-
 # The Journey of PyTorch
 
 ## Overview and Origins
