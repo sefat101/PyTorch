@@ -74,7 +74,7 @@
 * Improved overall speed and scalability for complex, real-world applications.
 * Provided better compatibility across a wider variety of deployment environments.
 
-### PyTorch  vs  TensorFlow
+## PyTorch  vs  TensorFlow
 
 | Aspect | PyTorch | TensorFlow | Verdict |
 | --- | --- | --- | --- |
@@ -93,3 +93,65 @@
 | **Parallelism and Distributed Training** | Supports distributed training with `torch.distributed`; enhanced by libraries like Horovod. | Extensive support with `tf.distribute.Strategy`; optimized for large-scale computing. | **TensorFlow Wins:** More advanced and user-friendly distributed training options. |
 | **Model Zoo and Pre-trained Models** | Access via TorchVision, Hugging Face; strong community sharing. | TensorFlow Hub offers a wide range; extensive community models. | **Tie:** Both offer extensive pre-trained models; choice depends on specific needs. |
 
+# PyTorch Modules, Libraries, and Industry Usage
+
+### Core PyTorch Modules
+
+| Module | Description |
+| :--- | :--- |
+| `torch` | The core module providing multidimensional arrays (tensors) and mathematical operations on them. |
+| `torch.autograd` | Automatic differentiation engine that records operations on tensors to compute gradients for optimization. |
+| `torch.nn` | Provides a neural networks library, including layers, activations, loss functions, and utilities to build deep learning models. |
+| `torch.optim` | Contains optimization algorithms (optimizers) like SGD, Adam, and RMSprop used for training neural networks. |
+| `torch.utils.data` | Utilities for data handling, including the `Dataset` and `DataLoader` classes for managing and loading datasets efficiently. |
+| `torch.jit` | Supports Just-In-Time (JIT) compilation and TorchScript for optimizing models and enabling deployment without Python dependencies. |
+| `torch.distributed` | Tools for distributed training across multiple GPUs and machines, facilitating parallel computation. |
+| `torch.cuda` | Interfaces with NVIDIA CUDA to enable GPU acceleration for tensor computations and model training. |
+| `torch.backends` | Contains settings and allows control over backend libraries like cuDNN, MKL, and others for performance tuning. |
+| `torch.multiprocessing` | Utilities for parallelism using multiprocessing, similar to Python's `multiprocessing` module but with support for CUDA tensors. |
+| `torch.quantization` | Tools for model quantization to reduce model size and improve inference speed, especially on edge devices. |
+| `torch.onnx` | Supports exporting PyTorch models to the ONNX (Open Neural Network Exchange) format for interoperability with other frameworks and deployment. |
+
+---
+
+### PyTorch Domain Libraries
+
+| Library | Description |
+| :--- | :--- |
+| `torchvision` | Provides datasets, model architectures, and image transformations for computer vision tasks. |
+| `torchtext` | Tools and datasets for natural language processing (NLP), including data preprocessing and vocabulary management. |
+| `torchaudio` | Utilities for audio processing tasks, including I/O, transforms, and pre-trained models for speech recognition. |
+| `torcharrow` | A library for accelerated data loading and preprocessing, especially for tabular and time series data (experimental). |
+| `torchserve` | A PyTorch model serving library that makes it easy to deploy trained models at scale in production environments. |
+| `pytorch_lightning` | A lightweight wrapper for PyTorch that simplifies the training loop and reduces boilerplate code, enabling scalable and reproducible models. |
+
+---
+
+### Popular PyTorch Ecosystem Libraries
+
+| Library | Description |
+| :--- | :--- |
+| `Hugging Face Transformers` | Provides state-of-the-art pre-trained models for NLP tasks like text classification, translation, and question answering, built on PyTorch. |
+| `Fastai` | High-level library that simplifies training fast and accurate neural nets using modern best practices, built on top of PyTorch. |
+| `PyTorch Geometric` | Extension library for geometric deep learning, including graph neural networks and 3D data processing. |
+| `TorchMetrics` | A modular metrics API for PyTorch, compatible with PyTorch Lightning and provides standardized implementations of many common metrics. |
+| `TorchElastic` | Enables dynamic scaling of PyTorch distributed training jobs, allowing for elasticity in resource management. |
+| `Optuna` | An automatic hyperparameter optimization software framework, integrating well with PyTorch for tuning models. |
+| `Catalyst` | Provides high-level features for training neural networks, focusing on reproducibility and fast experimentation. |
+| `Ignite` | High-level library to help with training neural networks in PyTorch, offering a lightweight engine for training and evaluating models. |
+| `AllenNLP` | An NLP research library built on PyTorch, designed to support researchers in deep learning for NLP. |
+| `Skorch` | A scikit-learn compatible wrapper for PyTorch that allows the use of PyTorch models with scikit-learn utilities and APIs. |
+| `PyTorch Forecasting` | High-level library for time series forecasting, making it easy to build, train, and evaluate complex models. |
+| `TensorBoard for PyTorch` | Allows visualization of training metrics, model graphs, and other useful data within TensorBoard for PyTorch models. |
+
+---
+
+### Who uses PyTorch
+
+| Company | Products/Services Using PyTorch | Description of Usage |
+| :--- | :--- | :--- |
+| **Meta Platforms (Facebook)** | - Facebook App<br>- Instagram<br>- Meta AI Research Projects | Developed PyTorch and uses it extensively for computer vision, natural language processing, and AI research across its platforms. |
+| **Microsoft** | - Azure Machine Learning<br>- Bing Search<br>- Office 365 Intelligent Features | Integrates PyTorch into Azure services for AI development; employs PyTorch in search relevance, productivity tools, and various AI applications. |
+| **Tesla** | - Autopilot System<br>- Full Self-Driving (FSD) Capability | Uses PyTorch for training deep neural networks in computer vision and perception tasks critical for autonomous driving systems. |
+| **OpenAI** | - GPT Models<br>- DALL·E<br>- ChatGPT | Utilizes PyTorch for training large-scale language models and generative models in natural language processing and computer vision. |
+| **Uber** | - Uber Ride-Hailing Platform<br>- Recommendations (e.g., Uber Eats) | Employs PyTorch for demand forecasting, route optimization, and developed Pyro, a probabilistic programming language. |
