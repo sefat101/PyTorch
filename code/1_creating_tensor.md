@@ -1,6 +1,5 @@
 # PyTorch Tensor Creation Functions
 
-Based on the provided notes, here is a detailed breakdown of each PyTorch tensor creation function.
 
 ### 1. `torch.empty()`
 *   **Explanation, Parameters, and Use Case:** This function is used to allocate memory for a tensor without initializing its values. The notes demonstrate this with `torch.empty(2,3)`, which passes two parameters to define a 2-by-3 matrix. The resulting variable `a` is shown to have the type `torch.tensor`. The primary use case is for performance optimization; it is the fastest way to create a tensor if you intend to immediately overwrite all the elements.
