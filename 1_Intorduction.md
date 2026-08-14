@@ -70,6 +70,11 @@
 * Enhanced support for deployment and production-readiness.
 * Optimized for modern, specialized hardware, including TPUs and custom AI accelerator chips.
 
+* **Impact:**
+* Improved overall speed and scalability for complex, real-world applications.
+* Provided better compatibility across a wider variety of deployment environments.
+
+###PyTorch  vs  TensorFlow
 
 | Aspect | PyTorch | TensorFlow | Verdict |
 | --- | --- | --- | --- |
@@ -88,7 +93,3 @@
 | **Parallelism and Distributed Training** | Supports distributed training with `torch.distributed`; enhanced by libraries like Horovod. | Extensive support with `tf.distribute.Strategy`; optimized for large-scale computing. | **TensorFlow Wins:** More advanced and user-friendly distributed training options. |
 | **Model Zoo and Pre-trained Models** | Access via TorchVision, Hugging Face; strong community sharing. | TensorFlow Hub offers a wide range; extensive community models. | **Tie:** Both offer extensive pre-trained models; choice depends on specific needs. |
 
-
-* **Impact:**
-* Improved overall speed and scalability for complex, real-world applications.
-* Provided better compatibility across a wider variety of deployment environments.
